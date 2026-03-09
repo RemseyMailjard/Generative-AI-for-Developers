@@ -1,13 +1,13 @@
 ---
 name: workspace-instructions
-description: Always-on instructions for the Generative AI for Developers project. Covers project overview, development workflow, styling conventions, and best practices for AI-assisted development.
+description: Always-on instructions for the Generative AI for Developers project. Covers project overview, development workflow, screenshot-replication conventions, and best practices for AI-assisted development.
 ---
 
 # Generative AI for Developers - Workspace Instructions
 
 ## Project Overview
 
-This workspace contains a static homepage for DocuSign, designed to showcase electronic signature solutions with a focus on generative AI integrations. The site is built using pure HTML and Tailwind CSS for responsive, modern styling. It's a demonstration project for developers interested in AI-powered document workflows.
+This workspace contains a static DocuSign-style marketing homepage focused on intelligent agreement management and generative AI messaging. The site is built with HTML and Tailwind CSS, and optimized for fast visual iteration from screenshot references.
 
 Key technologies:
 
@@ -20,12 +20,45 @@ Key technologies:
 - **Setup**: Run `npm install` to install dependencies (Tailwind CSS).
 - **Build CSS**: Use `npm run build-css` to compile Tailwind styles from `input.css` to `output.css`. This command watches for changes.
 - **View Site**: Open `index.html` in a web browser. Ensure `output.css` is up-to-date.
-- **No Testing**: Manual testing only—verify layout and responsiveness in different browsers.
+- **No Testing**: Manual testing only; verify layout and responsiveness in different browsers.
 - **Deployment**: Static files can be served from any web server or hosting platform.
+
+## Screenshot Replication Playbook
+
+When implementing from a screenshot, prioritize structure and hierarchy over exact pixel cloning.
+
+- Match in this order: **section order -> spacing rhythm -> typography scale -> color mood -> component details**.
+- Recreate long-form marketing pages as stacked blocks with clear transitions (hero, trust bar, feature grid, social proof, CTA, dense footer).
+- If source assets are unavailable (logos, product screenshots, photos), use clean placeholders with matching shape, contrast, and composition.
+- Keep copy concise and product-oriented; use DocuSign/IAM language patterns from the existing page.
+- Preserve responsiveness while matching desktop intent; mobile should stack naturally without changing section meaning.
+
+## Current Page Blueprint
+
+The homepage in `index.html` follows this order and future updates should preserve it unless explicitly requested:
+
+1. Sticky top navigation with utility CTA buttons
+2. High-contrast purple gradient hero with headline and two CTAs
+3. Partner/logo strip
+4. AI-powered agreement management intro + 2x2 capability cards
+5. IAM highlight split section
+6. Workflow/integration banner section on purple background
+7. Trust and recognition cards + logo chips
+8. Company outcomes/stat cards
+9. Recommended content row
+10. Large pre-footer CTA banner
+11. Multi-column enterprise footer + legal bar
 
 ## Styling Conventions
 
 All colors must adhere to the custom theme defined below. Use Tailwind CSS classes exclusively (e.g., `bg-blue-500`, `text-parchment-700`). Avoid arbitrary values unless absolutely necessary—reference this palette for consistency.
+
+Typography and layout conventions:
+
+- Use `Sora` for major headings and `Manrope` for body/UI text.
+- Use rounded cards (`rounded-2xl` to `rounded-3xl`), soft borders (`border-black-100`), and layered gradients for hero and feature emphasis.
+- Prefer `max-w-[1200px]` containers with `px-4 md:px-6` for desktop alignment.
+- Keep interactions subtle: `hover:bg-*`, `hover:text-*`, and lightweight transitions.
 
 ### Color Palette
 
@@ -84,7 +117,7 @@ Keep all colors within this theme. Use Tailwind CSS classes.
 - **Primary Colors**: Blue for CTAs, links, and headers.
 - **Backgrounds**: Parchment for subtle, warm backgrounds; white for content areas.
 - **Accents**: Vibrant coral for highlights or secondary actions.
-- **Text**: Black shades for readability.
+- **Text**: Black shades for readability; avoid low-contrast combinations on gradients.
 - **Responsive Design**: Use Tailwind's responsive prefixes (sm:, md:, lg:) for mobile-first layouts.
 - **Semantic HTML**: Structure pages with proper sections, headers, and navigation.
 
@@ -92,28 +125,40 @@ Keep all colors within this theme. Use Tailwind CSS classes.
 
 - **Static Site**: No JavaScript or frameworks to keep it lightweight and focused on content.
 - **Custom Tailwind Config**: Extended with project-specific colors via `tailwind.config.js`.
-- **Flat File Structure**: All assets in root for simplicity.
-- **No Dynamic Features**: Suitable for a demo; expand with JS if needed for interactivity.
+- **Flat File Structure**: Core files are in root for simplicity.
+- **No Dynamic Features**: Suitable for a demo; expand with JS if interactivity is required.
+- **Visual-First Composition**: Sections are authored directly in `index.html` for rapid design iteration.
 
 ## Potential Pitfalls
 
-- **CSS Build Required**: Always run the build command before viewing changes—`output.css` is generated and not committed.
+- **CSS Build Required**: Always run the build command before viewing changes; `output.css` is generated from `input.css` and class scanning.
 - **Browser Compatibility**: Test in modern browsers; no fallbacks for older versions.
 - **Static Limitations**: Can't handle forms, APIs, or user data—consider adding a backend for production use.
-- **Color Consistency**: Multiple parchment definitions exist; use the latest (second set) for accuracy.
-- **No Version Control Best Practices**: Add a `.gitignore` to exclude `node_modules` and generated files.
+- **Placeholder Asset Drift**: During screenshot recreation, placeholders can become inconsistent; keep card ratios and spacing uniform.
+- **Tailwind Content Globs**: Keep `content` patterns narrow to avoid scanning `node_modules`.
 
 ## Key Files
 
-- `index.html`: Main homepage with hero, features, and footer.
+- `index.html`: Main long-form homepage with all marketing sections.
 - `tailwind.config.js`: Custom color configuration.
 - `input.css`: Tailwind directives and CSS variables.
 - `output.css`: Compiled styles (generated).
 - `package.json`: Dependencies and build scripts.
 
+## Visual QA Checklist
+
+Before finalizing UI edits:
+
+1. Rebuild CSS (`npx tailwindcss -i ./input.css -o ./output.css`).
+2. Check desktop flow: hero impact, card spacing, section transitions, footer density.
+3. Check mobile flow: no text clipping, no horizontal scroll, clean stack order.
+4. Verify consistent heading/body font pairing (`Sora` + `Manrope`).
+5. Verify all colors come from theme tokens (`blue`, `parchment`, `vibrant-coral`, `black`).
+
 ## Best Practices for AI-Assisted Development
 
-- When adding new sections to the homepage, maintain the existing structure and color scheme.
+- When adding or editing sections, maintain the current page blueprint unless the user asks for structural changes.
 - For styling changes, update `input.css` or `tailwind.config.js` and rebuild.
-- Suggest improvements that align with the AI/generative theme, such as adding demo integrations.
-- Keep code clean and semantic for easy maintenance.
+- Suggest improvements aligned with AI/agreement-management storytelling.
+- Use semantic HTML and readable section boundaries.
+- If a request asks to "match screenshot closely," optimize for visual likeness first and perfect asset parity second.
