@@ -4,79 +4,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocuSign Homepage</title>
+    <title>DocuSign | Intelligent Agreement Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="output.css" rel="stylesheet">
 </head>
 
-<body class="bg-parchment-50 text-black-900">
-    <!-- Header -->
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-600">DocuSign</div>
-            <nav class="space-x-4">
-                <a href="#home" class="text-black-700 hover:text-blue-500">Home</a>
-                <a href="#features" class="text-black-700 hover:text-blue-500">Features</a>
-                <a href="#about" class="text-black-700 hover:text-blue-500">About</a>
-                <a href="#contact" class="text-black-700 hover:text-blue-500">Contact</a>
-            </nav>
+<body class="bg-white text-black-900" style="font-family: 'Manrope', sans-serif;">
+    <header class="sticky top-0 z-40 border-b border-black-100/80 bg-white/95 backdrop-blur">
+        <div class="mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 py-3 md:px-6">
+            <div class="flex items-center gap-8">
+                <a href="#" class="text-xl font-bold tracking-tight text-blue-700"
+                    style="font-family: 'Sora', sans-serif;">docusign</a>
+                <nav class="hidden items-center gap-5 text-sm text-black-700 lg:flex">
+                    <a href="#" class="transition hover:text-blue-600">Solutions</a>
+                    <a href="#" class="transition hover:text-blue-600">Products</a>
+                    <a href="#" class="transition hover:text-blue-600">Developers</a>
+                    <a href="#" class="transition hover:text-blue-600">Resources</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-2 md:gap-3">
+                <a href="#" class="hidden text-sm font-semibold text-black-700 md:inline">Contact Sales</a>
+                <a href="#"
+                    class="rounded-full border border-blue-600 px-4 py-2 text-sm font-semibold text-blue-700 transition hover:bg-blue-50">Log
+                    In</a>
+                <a href="#"
+                    class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700">Sign
+                    Up</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-r from-blue-50 to-parchment-100 py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-5xl font-bold text-blue-800 mb-4">Welcome to DocuSign</h1>
-            <p class="text-xl text-black-600 mb-8">Secure, reliable, and easy-to-use electronic signature solutions for
-                your documents.</p>
-            <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition">Get Started</a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Features</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="bg-blue-100 p-6 rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-blue-700">Easy Signing</h3>
-                    </div>
-                    <p class="text-black-600">Sign documents from anywhere with our intuitive interface.</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-vibrant-coral-100 p-6 rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-vibrant-coral-700">Secure & Compliant</h3>
-                    </div>
-                    <p class="text-black-600">Bank-level security and compliance with global standards.</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-parchment-200 p-6 rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-parchment-700">AI-Powered</h3>
-                    </div>
-                    <p class="text-black-600">Leverage generative AI for smarter document processing.</p>
+    <main>
+        <section class="overflow-hidden bg-gradient-to-b from-blue-700 via-blue-800 to-blue-900 text-white">
+            <div class="mx-auto max-w-[1200px] px-4 pb-20 pt-16 text-center md:px-6 md:pb-24 md:pt-20">
+                <p class="mb-4 text-xs uppercase tracking-[0.28em] text-blue-100">Intelligent Agreement Management</p>
+                <h1 class="mx-auto max-w-4xl text-4xl font-semibold leading-tight md:text-6xl"
+                    style="font-family: 'Sora', sans-serif;">
+                    Everything you need to agree
+                </h1>
+                <p class="mx-auto mt-5 max-w-2xl text-base text-blue-100 md:text-lg">
+                    Leverage AI to manage your agreements from creation to signature and beyond. Faster cycles, better
+                    visibility, and stronger outcomes.
+                </p>
+                <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                    <a href="#"
+                        class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-blue-800 transition hover:bg-parchment-50">Start
+                        free trial</a>
+                    <a href="#"
+                        class="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Talk
+                        to sales</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-parchment-50">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-blue-800 mb-8">About DocuSign</h2>
-            <p class="text-lg text-black-600 max-w-2xl mx-auto">DocuSign is the world's leading e-signature solution,
-                trusted by millions to sign and send documents securely. With integrations for developers and AI
-                capabilities, we make document workflows efficient and intelligent.</p>
-        </div>
-    </section>
+        <section class="border-b border-black-100 bg-white">
+            <div
+                class="mx-auto grid max-w-[1200px] grid-cols-2 gap-6 px-4 py-6 text-center text-xs font-semibold uppercase tracking-[0.2em] text-black-500 md:grid-cols-6 md:px-6">
+                <span>Google</span>
+                <span>Uber</span>
+                <span>Salesforce</span>
+                <span>Apple</span>
+                <span>T-Mobile</span>
+                <span>Unilever</span>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-black-900 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2023 DocuSign. All rights reserved.</p>
-            <div class="mt-4 space-x-4">
-                <a href="#" class="hover:text-blue-400">Privacy Policy</a>
-                <a href="#" class="hover:text-blue-400">Terms of Service</a>
-                <a href="#" class="hover:text-blue-400">Contact Us</a>
+        <section class="mx-auto max-w-[1200px] px-4 py-14 md:px-6">
+            <p class="text-center text-xs uppercase tracking-[0.24em] text-black-500">Agreement Cloud</p>
+            <h2 class="mt-3 text-center text-3xl font-semibold text-blue-800 md:text-4xl"
+                style="font-family: 'Sora', sans-serif;">
+                AI-powered agreement management
+            </h2>
+            <p class="mx-auto mt-4 max-w-3xl text-center text-sm text-black-600 md:text-base">
+                Analyze risk, generate smarter content, and automate every stage of agreement work.
+            </p>
+
+            <div class="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
+                <article class="rounded-2xl border border-black-100 bg-parchment-50 p-6">
+                    <h3 class="text-xl font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">Search,
+                        manage, and analyze agreements with AI</h3>
+                    <p class="mt-3 text-sm text-black-600">Reveal key terms and obligations instantly with
+                        natural-language search and insights.</p>
+                    <div class="mt-6 rounded-xl bg-white p-4 shadow-sm">
+                        <div class="h-2 w-32 rounded-full bg-blue-200"></div>
+                        <div class="mt-3 h-2 w-48 rounded-full bg-black-100"></div>
+                        <div
+                            class="mt-6 flex items-center gap-2 rounded-full border border-black-100 px-4 py-3 text-sm text-black-500">
+                            Search agreements and clauses...</div>
+                    </div>
+                </article>
+
+                <article class="rounded-2xl border border-black-100 bg-parchment-50 p-6">
+                    <h3 class="text-xl font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">Send,
+                        sign, and track documents</h3>
+                    <p class="mt-3 text-sm text-black-600">Automate routing and reminders while keeping every
+                        stakeholder in sync.</p>
+                    <div class="mt-6 rounded-xl bg-white p-4 shadow-sm">
+                        <div class="space-y-3">
+                            <div class="h-11 rounded-lg bg-blue-50"></div>
+                            <div class="h-11 rounded-lg bg-parchment-100"></div>
+                            <div class="h-11 rounded-lg bg-blue-100"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded-2xl border border-black-100 bg-parchment-50 p-6">
+                    <h3 class="text-xl font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">Automate
+                        agreement processes</h3>
+                    <p class="mt-3 text-sm text-black-600">Use templates, web forms, and AI-assisted workflows to reduce
+                        manual handoffs.</p>
+                    <div class="mt-6 grid grid-cols-2 gap-3">
+                        <div class="h-28 rounded-xl bg-white shadow-sm"></div>
+                        <div class="h-28 rounded-xl bg-white shadow-sm"></div>
+                    </div>
+                </article>
+
+                <article class="rounded-2xl border border-black-100 bg-parchment-50 p-6">
+                    <h3 class="text-xl font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">Bring
+                        people, agreements, and data together</h3>
+                    <p class="mt-3 text-sm text-black-600">Connect your CRM and core systems to eliminate silos across
+                        teams.</p>
+                    <div class="mt-6 rounded-xl bg-white p-4 shadow-sm">
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="h-14 rounded-lg bg-parchment-100"></div>
+                            <div class="h-14 rounded-lg bg-blue-100"></div>
+                            <div class="h-14 rounded-lg bg-parchment-100"></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="mx-auto max-w-[1200px] px-4 pb-16 md:px-6">
+            <div class="grid gap-6 rounded-3xl bg-parchment-50 p-6 md:grid-cols-2 md:p-10">
+                <div>
+                    <p class="text-xs uppercase tracking-[0.24em] text-black-500">IAM</p>
+                    <h2 class="mt-3 text-3xl font-semibold text-black-900 md:text-4xl"
+                        style="font-family: 'Sora', sans-serif;">Do much more with IAM</h2>
+                    <p class="mt-4 text-sm text-black-600 md:text-base">Drive measurable business impact with
+                        intelligent agreement management, powered by AI and trusted at global scale.</p>
+                    <a href="#"
+                        class="mt-6 inline-flex rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">View
+                        plans and pricing</a>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-br from-blue-900 to-blue-700 p-5">
+                    <div class="h-full rounded-xl bg-white/95 p-4 shadow-xl">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="h-24 rounded-lg bg-blue-50"></div>
+                            <div class="h-24 rounded-lg bg-parchment-100"></div>
+                            <div class="col-span-2 h-32 rounded-lg bg-black-900"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-b from-blue-700 to-blue-900 py-16 text-white">
+            <div class="mx-auto max-w-[1200px] px-4 md:px-6">
+                <p class="text-center text-xs uppercase tracking-[0.24em] text-blue-100">Workflow Builder</p>
+                <h2 class="mt-3 text-center text-3xl font-semibold md:text-4xl"
+                    style="font-family: 'Sora', sans-serif;">Build custom agreement workflows</h2>
+                <p class="mx-auto mt-4 max-w-3xl text-center text-sm text-blue-100 md:text-base">Connect every stage of
+                    your process with reusable templates and integrations.</p>
+                <div class="mt-10 rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur">
+                    <div
+                        class="grid grid-cols-2 gap-3 text-center text-xs font-semibold uppercase tracking-[0.16em] md:grid-cols-8">
+                        <div class="rounded-xl bg-white/20 px-2 py-4">SFDC</div>
+                        <div class="rounded-xl bg-white/20 px-2 py-4">Slack</div>
+                        <div class="rounded-xl bg-white/20 px-2 py-4">Google</div>
+                        <div class="rounded-xl bg-white/20 px-2 py-4">HubSpot</div>
+                        <div class="rounded-xl bg-white/20 px-2 py-4">Office</div>
+                        <div class="rounded-xl bg-white/20 px-2 py-4">Stripe</div>
+                        <div class="rounded-xl bg-white/20 px-2 py-4">Workday</div>
+                        <div class="rounded-xl bg-white/20 px-2 py-4">SAP</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-900 py-16 text-white">
+            <div class="mx-auto max-w-[1200px] px-4 md:px-6">
+                <div class="grid gap-5 md:grid-cols-3">
+                    <article class="rounded-2xl bg-white p-6 text-black-900">
+                        <p class="text-xs uppercase tracking-[0.2em] text-black-500">Trusted</p>
+                        <h3 class="mt-3 text-2xl font-semibold" style="font-family: 'Sora', sans-serif;">Trusted the
+                            world over</h3>
+                        <p class="mt-3 text-sm text-black-600">Millions of users and over one billion transactions in
+                            180+ countries.</p>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 text-black-900">
+                        <p class="text-xs uppercase tracking-[0.2em] text-black-500">Customer Story</p>
+                        <h3 class="mt-3 text-xl font-semibold" style="font-family: 'Sora', sans-serif;">Reduced approval
+                            time by 65%</h3>
+                        <p class="mt-3 text-sm text-black-600">A global retailer unified legal and sales workflows
+                            through IAM automation.</p>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 text-black-900">
+                        <p class="text-xs uppercase tracking-[0.2em] text-black-500">Recognition</p>
+                        <h3 class="mt-3 text-xl font-semibold" style="font-family: 'Sora', sans-serif;">Leader in
+                            agreement platforms</h3>
+                        <p class="mt-3 text-sm text-black-600">Recognized for innovation, security posture, and scalable
+                            enterprise delivery.</p>
+                    </article>
+                </div>
+                <div
+                    class="mt-10 grid grid-cols-2 gap-3 text-xs uppercase tracking-[0.18em] text-blue-100 md:grid-cols-6">
+                    <div class="rounded-xl border border-white/20 px-4 py-3 text-center">Microsoft</div>
+                    <div class="rounded-xl border border-white/20 px-4 py-3 text-center">Accenture</div>
+                    <div class="rounded-xl border border-white/20 px-4 py-3 text-center">PwC</div>
+                    <div class="rounded-xl border border-white/20 px-4 py-3 text-center">Deloitte</div>
+                    <div class="rounded-xl border border-white/20 px-4 py-3 text-center">Zoom</div>
+                    <div class="rounded-xl border border-white/20 px-4 py-3 text-center">NVIDIA</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-auto max-w-[1200px] px-4 py-16 md:px-6">
+            <h2 class="text-center text-3xl font-semibold text-black-900 md:text-4xl"
+                style="font-family: 'Sora', sans-serif;">Companies do better with DocuSign</h2>
+            <p class="mx-auto mt-4 max-w-3xl text-center text-sm text-black-600 md:text-base">17 of the world's top 20
+                life sciences companies and 18 of the top 20 financial services firms trust us.</p>
+
+            <div class="mt-10 grid gap-5 md:grid-cols-3">
+                <article class="rounded-2xl border border-black-100 bg-parchment-50 p-5">
+                    <p class="text-xs uppercase tracking-[0.18em] text-black-500">Case Study</p>
+                    <h3 class="mt-2 text-lg font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">
+                        Faster onboarding</h3>
+                    <p class="mt-2 text-sm text-black-600">Reduced agreement turnaround from days to minutes for partner
+                        contracts.</p>
+                    <div class="mt-6 text-2xl font-semibold text-blue-700">5 minutes</div>
+                </article>
+                <article class="rounded-2xl border border-black-100 bg-parchment-50 p-5">
+                    <p class="text-xs uppercase tracking-[0.18em] text-black-500">Outcome</p>
+                    <h3 class="mt-2 text-lg font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">Lower
+                        operating costs</h3>
+                    <p class="mt-2 text-sm text-black-600">Saved legal ops teams time with auto-generated clauses and
+                        review suggestions.</p>
+                    <div class="mt-6 text-2xl font-semibold text-blue-700">70% faster</div>
+                </article>
+                <article class="rounded-2xl border border-black-100 bg-parchment-50 p-5">
+                    <p class="text-xs uppercase tracking-[0.18em] text-black-500">Scale</p>
+                    <h3 class="mt-2 text-lg font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">
+                        Enterprise ready</h3>
+                    <p class="mt-2 text-sm text-black-600">Rolled out across 42 countries with role-based controls and
+                        compliance automation.</p>
+                    <div class="mt-6 text-2xl font-semibold text-blue-700">42 countries</div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-parchment-50 py-16">
+            <div class="mx-auto max-w-[1200px] px-4 md:px-6">
+                <h2 class="text-3xl font-semibold text-black-900 md:text-4xl" style="font-family: 'Sora', sans-serif;">
+                    Recommended for you</h2>
+                <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-3">
+                    <article class="overflow-hidden rounded-2xl bg-blue-900 p-6 text-white">
+                        <p class="text-xs uppercase tracking-[0.18em] text-blue-100">Guide</p>
+                        <h3 class="mt-3 text-xl font-semibold" style="font-family: 'Sora', sans-serif;">Bring agreements
+                            to life with IAM</h3>
+                        <p class="mt-3 text-sm text-blue-100">Practical steps to modernize contract workflows in 90
+                            days.</p>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 shadow-sm">
+                        <p class="text-xs uppercase tracking-[0.18em] text-black-500">Webinar</p>
+                        <h3 class="mt-3 text-xl font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">
+                            Win deals and close faster</h3>
+                        <p class="mt-3 text-sm text-black-600">Learn how AI assistants support legal and sales
+                            alignment.</p>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 shadow-sm">
+                        <p class="text-xs uppercase tracking-[0.18em] text-black-500">Report</p>
+                        <h3 class="mt-3 text-xl font-semibold text-black-900" style="font-family: 'Sora', sans-serif;">
+                            AI in contract lifecycle management</h3>
+                        <p class="mt-3 text-sm text-black-600">See benchmark data from over 2,000 legal and procurement
+                            teams.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-auto max-w-[1200px] px-4 py-12 md:px-6">
+            <div class="grid items-center gap-6 rounded-3xl bg-blue-700 p-8 text-white md:grid-cols-2 md:p-10">
+                <div>
+                    <p class="text-xs uppercase tracking-[0.2em] text-blue-100">Next Steps</p>
+                    <h2 class="mt-3 text-3xl font-semibold md:text-4xl" style="font-family: 'Sora', sans-serif;">
+                        DocuSign IAM is the agreement platform your business needs</h2>
+                    <a href="#"
+                        class="mt-6 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-blue-800 transition hover:bg-parchment-50">Talk
+                        to an expert</a>
+                </div>
+                <div class="h-48 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-900 md:h-56"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-black-100 bg-parchment-50">
+        <div
+            class="mx-auto grid max-w-[1200px] grid-cols-2 gap-8 px-4 py-12 text-sm text-black-600 md:grid-cols-6 md:px-6">
+            <div>
+                <h4 class="mb-3 font-semibold text-black-900">Products</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-700">eSignature</a></li>
+                    <li><a href="#" class="hover:text-blue-700">CLM</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Notary</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Web Forms</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-3 font-semibold text-black-900">Solutions</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-700">Sales</a></li>
+                    <li><a href="#" class="hover:text-blue-700">HR</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Legal</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Procurement</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-3 font-semibold text-black-900">Developers</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-700">API Overview</a></li>
+                    <li><a href="#" class="hover:text-blue-700">SDKs</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Documentation</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Status</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-3 font-semibold text-black-900">Resources</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-700">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Customer Stories</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Events</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Help Center</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-3 font-semibold text-black-900">Company</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-700">About</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Careers</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Newsroom</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Investors</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-3 font-semibold text-black-900">Support</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-700">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Privacy</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Terms</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-black-100">
+            <div
+                class="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-4 px-4 py-5 text-xs text-black-500 md:flex-row md:px-6">
+                <p>Copyright 2026 DocuSign, Inc. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="hover:text-blue-700">X</a>
+                    <a href="#" class="hover:text-blue-700">LinkedIn</a>
+                    <a href="#" class="hover:text-blue-700">YouTube</a>
+                </div>
             </div>
         </div>
     </footer>
