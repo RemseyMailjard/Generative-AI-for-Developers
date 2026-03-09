@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-blue-50: #ede5ff;
+    --color-blue-100: #dbccff;
+    --color-blue-200: #b899ff;
+    --color-blue-300: #9466ff;
+    --color-blue-400: #7033ff;
+    --color-blue-500: #4d00ff;
+    --color-blue-600: #3d00cc;
+    --color-blue-700: #2e0099;
+    --color-blue-800: #1f0066;
+    --color-blue-900: #0f0033;
+    --color-blue-950: #0b0024;
+
+    --color-parchment-50: #f7f1ed;
+    --color-parchment-100: #f0e3db;
+    --color-parchment-200: #e0c7b8;
+    --color-parchment-300: #d1ab94;
+    --color-parchment-400: #c28f70;
+    --color-parchment-500: #b3744d;
+    --color-parchment-600: #8f5c3d;
+    --color-parchment-700: #6b452e;
+    --color-parchment-800: #472e1f;
+    --color-parchment-900: #24170f;
+    --color-parchment-950: #19100b;
+
+    --color-vibrant-coral-50: #ffe6e6;
+    --color-vibrant-coral-100: #fecdcd;
+    --color-vibrant-coral-200: #fd9b9b;
+    --color-vibrant-coral-300: #fd6868;
+    --color-vibrant-coral-400: #fc3636;
+    --color-vibrant-coral-500: #fb0404;
+    --color-vibrant-coral-600: #c90303;
+    --color-vibrant-coral-700: #970202;
+    --color-vibrant-coral-800: #640202;
+    --color-vibrant-coral-900: #320101;
+    --color-vibrant-coral-950: #230101;
+
+    --color-black-50: #f3f1f1;
+    --color-black-100: #e8e3e3;
+    --color-black-200: #d1c7c7;
+    --color-black-300: #b9acac;
+    --color-black-400: #a29090;
+    --color-black-500: #8b7474;
+    --color-black-600: #6f5d5d;
+    --color-black-700: #534646;
+    --color-black-800: #382e2e;
+    --color-black-900: #1c1717;
+    --color-black-950: #131010;
+  }
+}

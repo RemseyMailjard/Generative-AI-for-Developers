@@ -1,0 +1,12 @@
+{
+    "name": "docusign-homepage",
+    "version": "1.0.0",
+    "description": "Homepage for DocuSign using Tailwind CSS",
+    "main": "index.html",
+    "scripts": {
+        "build-css": "tailwindcss -i ./input.css -o ./output.css --watch"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.0"
+    }
+}
