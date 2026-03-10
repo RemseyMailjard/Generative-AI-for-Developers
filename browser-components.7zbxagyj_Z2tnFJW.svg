@@ -1,0 +1,293 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser Window -->
+  <rect x="100" y="100" width="600" height="400" rx="8" ry="8" fill="#FFFFFF" stroke="#DDD" stroke-width="2" />
+  
+  <!-- Browser Navigation Bar -->
+  <rect x="100" y="100" width="600" height="40" rx="8" ry="8" fill="#F0F0F0" />
+  
+  <!-- Browser Control Buttons -->
+  <circle cx="125" cy="120" r="7" fill="#FF605C" />
+  <circle cx="150" cy="120" r="7" fill="#FFBD44" />
+  <circle cx="175" cy="120" r="7" fill="#00CA4E" />
+  
+  <!-- URL Bar -->
+  <rect x="200" y="110" width="400" height="20" rx="4" ry="4" fill="#E5E5E5" />
+  
+  <!-- Browser Content Area -->
+  <rect x="100" y="140" width="600" height="360" fill="#F8F8F8" />
+  
+  <!-- Component Grid System -->
+  <line x1="100" y1="220" x2="700" y2="220" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="100" y1="380" x2="700" y2="380" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="250" y1="140" x2="250" y2="500" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="400" y1="140" x2="400" y2="500" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="550" y1="140" x2="550" y2="500" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4" />
+  
+  <!-- Header Component -->
+  <rect x="120" y="160" width="560" height="40" rx="4" ry="4" fill="#F0F0F0" />
+  <rect x="140" y="170" width="100" height="20" rx="4" ry="4" fill="#7B61FF" />
+  <circle cx="630" cy="180" r="10" fill="#FF6B8B" />
+  <circle cx="660" cy="180" r="10" fill="#4EA8DE" />
+  
+  <!-- Sidebar Component -->
+  <rect x="120" y="220" width="110" height="260" rx="4" ry="4" fill="#F5F5F5" />
+  
+  <!-- First row -->
+  <rect x="135" y="240" width="80" height="10" rx="2" ry="2" fill="#CCCCCC" />
+  
+  <!-- Second row -->
+  <rect x="135" y="260" width="80" height="10" rx="2" ry="2" fill="#CCCCCC" />
+  
+  <!-- Third row with animation - will swap with last row -->
+  <rect id="row-third" x="135" y="280" width="80" height="10" rx="2" ry="2" fill="#7B61FF">
+    <animate attributeName="fill" values="#7B61FF;#FF6B8B;#7B61FF" dur="2s" repeatCount="indefinite" begin="2s"/>
+    <animate 
+      attributeName="y" 
+      values="280;340;280" 
+      dur="3s" 
+      calcMode="spline"
+      keyTimes="0;0.3;1"
+      keySplines="0.1 0.8 0.2 1;0.1 0.8 0.2 1"
+      begin="0s; sidebar_animation_end.end + 5s" />
+  </rect>
+  
+  <!-- Fourth row -->
+  <rect x="135" y="300" width="80" height="10" rx="2" ry="2" fill="#CCCCCC" />
+  
+  <!-- Fifth row -->
+  <rect x="135" y="320" width="80" height="10" rx="2" ry="2" fill="#CCCCCC" />
+  
+  <!-- Last row with animation - will swap with third row -->
+  <rect id="row-last" x="135" y="340" width="80" height="10" rx="2" ry="2" fill="#CCCCCC">
+    <animate 
+      id="sidebar_animation_end"
+      attributeName="y" 
+      values="340;280;340" 
+      dur="3s" 
+      calcMode="spline"
+      keyTimes="0;0.3;1"
+      keySplines="0.1 0.8 0.2 1;0.1 0.8 0.2 1"
+      begin="0s; sidebar_animation_end.end + 5s" />
+  </rect>
+  
+  <!-- Card Component 1 -->
+  <rect x="270" y="240" width="110" height="140" rx="6" ry="6" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" />
+  <rect x="270" y="240" width="110" height="60" rx="6" ry="6" fill="#F0F0F0" />
+  <rect x="280" y="310" width="90" height="10" rx="2" ry="2" fill="#AAAAAA" />
+  <rect x="280" y="330" width="60" height="8" rx="2" ry="2" fill="#CCCCCC" />
+  <rect x="280" y="350" width="40" height="20" rx="4" ry="4" fill="#7B61FF" />
+  
+  <!-- Card Component 2 -->
+  <rect x="420" y="240" width="110" height="140" rx="6" ry="6" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" />
+  <rect x="420" y="240" width="110" height="60" rx="6" ry="6" fill="#F0F0F0" />
+  <rect x="430" y="310" width="90" height="10" rx="2" ry="2" fill="#AAAAAA" />
+  <rect x="430" y="330" width="60" height="8" rx="2" ry="2" fill="#CCCCCC" />
+  <rect x="430" y="350" width="40" height="20" rx="4" ry="4" fill="#FF6B8B" />
+  
+  <!-- Chart Component -->
+  <rect x="570" y="240" width="110" height="140" rx="6" ry="6" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" />
+  
+  <!-- Chart line that will animate between blue and pink -->
+  <polyline id="chart-line" points="580,350 590,330 600,340 610,300 620,320 630,290 640,310 650,280 660,295" stroke="#4EA8DE" stroke-width="2" fill="none">
+    <animate attributeName="stroke" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <animate 
+      id="chart_animation"
+      attributeName="points" 
+      values="580,350 590,330 600,340 610,300 620,320 630,290 640,310 650,280 660,295;
+              580,330 590,350 600,320 610,330 620,300 630,320 640,290 650,310 660,270;
+              580,350 590,330 600,340 610,300 620,320 630,290 640,310 650,280 660,295" 
+      dur="4s" 
+      begin="0s; chart_animation_end.end + 7s"
+      calcMode="spline"
+      keyTimes="0;0.5;1"
+      keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </polyline>
+  
+  <!-- Animating chart dots -->
+  <circle cx="580" cy="350" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- Bottom dot moves up -->
+    <animate attributeName="cy" values="350;330;350" dur="4s" begin="0s; chart_animation_end.end + 7s" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  <circle cx="590" cy="330" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- Mid-high dot moves down -->
+    <animate attributeName="cy" values="330;350;330" dur="4s" begin="0s; chart_animation_end.end + 7s" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  <circle cx="600" cy="340" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- Mid-low dot moves up -->
+    <animate attributeName="cy" values="340;320;340" dur="4s" begin="0s; chart_animation_end.end + 7s" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  <circle cx="610" cy="300" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- High dot moves down -->
+    <animate attributeName="cy" values="300;330;300" dur="4s" begin="0s; chart_animation_end.end + 7s" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  <circle cx="620" cy="320" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- Mid dot moves up -->
+    <animate attributeName="cy" values="320;300;320" dur="4s" begin="0s; chart_animation_end.end + 7s" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  <circle cx="630" cy="290" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- High dot moves down -->
+    <animate attributeName="cy" values="290;320;290" dur="4s" begin="0s; chart_animation_end.end + 7s" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  <circle cx="640" cy="310" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- Mid dot moves up -->
+    <animate attributeName="cy" values="310;290;310" dur="4s" begin="0s; chart_animation_end.end + 7s" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  <circle cx="650" cy="280" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- Highest dot moves down -->
+    <animate attributeName="cy" values="280;310;280" dur="4s" begin="0s; chart_animation_end.end + 7s" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  <circle cx="660" cy="295" r="3" fill="#4EA8DE">
+    <animate attributeName="fill" values="#4EA8DE;#FF6B8B;#4EA8DE" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <!-- Mid dot moves down, but less -->
+    <animate 
+      id="chart_animation_end"
+      attributeName="cy" 
+      values="295;270;295" 
+      dur="4s" 
+      begin="0s; chart_animation_end.end + 7s" 
+      calcMode="spline" 
+      keyTimes="0;0.5;1" 
+      keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </circle>
+  
+  <!-- Form Component -->
+  <rect x="270" y="400" width="260" height="80" rx="6" ry="6" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" />
+  <rect x="280" y="410" width="150" height="20" rx="4" ry="4" fill="#F0F0F0" />
+  <rect x="280" y="440" width="150" height="20" rx="4" ry="4" fill="#F0F0F0" />
+  <rect x="445" y="440" width="75" height="20" rx="4" ry="4" fill="#FF6B8B" />
+  
+  <!-- Floating Component - Notification -->
+  <rect x="570" y="400" width="110" height="80" rx="6" ry="6" fill="#7B61FF" stroke="#8975FF" stroke-width="1" />
+  <circle cx="590" cy="420" r="10" fill="#FFFFFF" />
+  <rect x="610" y="415" width="50" height="10" rx="2" ry="2" fill="#FFFFFF" />
+  <rect x="590" y="440" width="70" height="8" rx="2" ry="2" fill="#FFFFFF" />
+  <rect x="590" y="455" width="50" height="8" rx="2" ry="2" fill="#FFFFFF" />
+  
+  <!-- Connecting Lines Between Components -->
+  <line x1="230" y1="350" x2="270" y2="310" stroke="#7B61FF" stroke-width="2" stroke-opacity="0.6" />
+  <line x1="380" y1="310" x2="420" y2="310" stroke="#FF6B8B" stroke-width="2" stroke-opacity="0.6" />
+  <line x1="530" y1="310" x2="570" y2="310" stroke="#4EA8DE" stroke-width="2" stroke-opacity="0.6" />
+  <line x1="400" y1="380" x2="400" y2="400" stroke="#FF6B8B" stroke-width="2" stroke-opacity="0.6" />
+  <line x1="530" y1="440" x2="570" y2="440" stroke="#FF6B8B" stroke-width="2" stroke-opacity="0.6" />
+  
+  <!-- Glowing Dots -->
+  <circle cx="230" cy="350" r="4" fill="#7B61FF">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="270" cy="310" r="4" fill="#7B61FF">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="380" cy="310" r="4" fill="#FF6B8B">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />  
+  </circle>
+  <circle cx="420" cy="310" r="4" fill="#FF6B8B">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="530" cy="310" r="4" fill="#4EA8DE">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="570" cy="310" r="4" fill="#4EA8DE">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="400" cy="380" r="4" fill="#FF6B8B">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="400" cy="400" r="4" fill="#FF6B8B">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="530" cy="440" r="4" fill="#FF6B8B">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="570" cy="440" r="4" fill="#FF6B8B">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- LEFT TEAM OWNERSHIP POPUP (Updated to match screenshot) -->
+  <!-- Team Popup Modal -->
+  <rect x="0" y="170" width="90" height="80" rx="10" ry="10" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" filter="drop-shadow(0px 3px 3px rgba(0,0,0,0.1))"/>
+  
+  <!-- Profile Picture Background (Purple Gradient) -->
+  <rect x="10" y="180" width="20" height="20" rx="5" ry="5" fill="url(#purpleGradient)"/>
+  
+  <!-- Define the purple gradient -->
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C4B5FD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Profile Name -->
+  <text x="52" y="220" text-anchor="end" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333333">Forms</text>
+    
+  <!-- Job Title -->
+  <text x="80" y="237" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">Front End Team</text>
+  
+  <!-- Animated dotted line connection -->
+  <line x1="91" y1="210" x2="120" y2="280" stroke="#7B61FF" stroke-width="2" stroke-opacity="0.6" />
+  <circle cx="80" cy="250" r="3" style="fill:#7B61FF">
+    <animate
+      attributeName="cx"
+      begin="0s"
+      dur="2s"
+      from="91"
+      to="120"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="cy"
+      begin="0s"
+      dur="2s"
+      from="210"
+      to="280"
+      repeatCount="indefinite" />
+  </circle>
+  
+  <!-- RIGHT TEAM OWNERSHIP POPUP (Updated to match screenshot) -->
+  <!-- Team Popup Modal -->
+  <rect x="710" y="340" width="90" height="80" rx="10" ry="10" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" filter="drop-shadow(0px 3px 3px rgba(0,0,0,0.1))"/>
+  
+  <!-- Profile Picture Background (Pink Gradient) -->
+  <rect x="720" y="350" width="20" height="20" rx="5" ry="5" fill="url(#pinkGradient)"/>
+  
+  <!-- Define the pink gradient -->
+  <defs>
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FBCFE8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Profile Name -->
+  <text x="783" y="390" text-anchor="end" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333333">Analytics</text>
+    
+  <!-- Job Title -->
+  <text x="791" y="407" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">Front End Team</text>
+  
+  <!-- Animated dotted line connection -->
+  <line x1="709" y1="380" x2="680" y2="310" stroke="#FF6B8B" stroke-width="2" stroke-opacity="0.6" />
+  <circle cx="710" cy="250" r="3" style="fill:#FF6B8B">
+    <animate
+      attributeName="cx"
+      begin="0s"
+      dur="2s"
+      from="709"
+      to="680"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="cy"
+      begin="0s"
+      dur="2s"
+      from="380"
+      to="310"
+      repeatCount="indefinite" />
+  </circle>
+</svg>
